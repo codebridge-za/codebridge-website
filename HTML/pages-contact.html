@@ -267,27 +267,23 @@
 <!-- Map Container -->
 <div class="contact-map margin-bottom-60">
 
+		<!-- Office -->
+		<div class="address-box-container">
+			<div class="address-container" data-background-image="images/our-office.jpg">
+				<div class="office-address">
+					<h3>About</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- Office / End -->
+
 	<!-- Google Maps -->
 	<div id="singleListingMap-container">
-		<div id="singleListingMap" data-latitude="-33.972220" data-longitude="18.462760" data-map-icon="im im-icon-Map2"></div>
+		<div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
 		<a href="#" id="streetView">Street View</a>
 	</div>
 	<!-- Google Maps / End -->
-
-	<!-- Office -->
-	<div class="address-box-container">
-		<div class="address-container" data-background-image="images/our-office.jpg">
-			<div class="office-address">
-				<h3>Our Office</h3>
-				<ul>
-					<li>John Street 304</li>
-					<li>New York</li>
-					<li>Phone (123) 123-456 </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Office / End -->
 
 </div>
 <div class="clearfix"></div>
@@ -452,35 +448,8 @@
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 
-<!-- Google Autocomplete -->
-<script>
-	function initAutocomplete() {
-	  var input = document.getElementById('autocomplete-input');
-	  var autocomplete = new google.maps.places.Autocomplete(input);
-  
-	  autocomplete.addListener('place_changed', function() {
-		var place = autocomplete.getPlace();
-		if (!place.geometry) {
-		  window.alert("No details available for input: '" + place.name + "'");
-		  return;
-		}
-	  });
-  
-	  if ($('.main-search-input-item')[0]) {
-		  setTimeout(function(){ 
-			  $(".pac-container").prependTo("#autocomplete-container");
-		  }, 300);
-	  }
-  }
-  </script>
-
 <!-- Maps -->
-<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script> -->
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqN4rzzhfditfB0RdTEw_Uz87ZdUlkzfo&callback=initAutocomplete"
-type="text/javascript"></script> -->
-<script src="https://maps.googleapis.com/maps/api/js?libraries=key=AIzaSyBqN4rzzhfditfB0RdTEw_Uz87ZdUlkzfo&callback=initAutocomplete"></script>
-
-
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
 <script type="text/javascript" src="scripts/infobox.min.js"></script>
 <script type="text/javascript" src="scripts/markerclusterer.js"></script>
 <script type="text/javascript" src="scripts/maps.js"></script>
